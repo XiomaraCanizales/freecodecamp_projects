@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Raleway&display=swap');
+
+/* resets */
+* { 
+    box-sizing: border-box; 
+    margin: 0 auto;
+}
+
+/* basics */
+body {
+    font-family: 'Raleway', sans-serif;
+    max-width: 1280px;
+    font-size: 18px;
+}
+section {
+    width: 100%;
+    display: inline-block;
+    margin-top: 8%;
+}
+q {
+    font-family: 'Cinzel', serif;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1.5em;
+}
+p {
+     width: 75%;
+     text-align: justify;
+}
+
+/* intro */
+#title {
+    background-color: black;
+    width: 100%;
+    height: 3em;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 3em;
+    text-transform: uppercase;
+}
+.frida-pic {
+    width: 40%;
+    float: left;
+    min-width: 400px;
+}
+.intro {
+    margin-top:4%;
+    width: 55%;
+    float: left;
+}
+.intro > h1 {
+    font-size: 4rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1em;
+}
+.intro > h3 { 
+    text-transform: uppercase;
+    font-size: 0.85em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.intro p {
+    text-align: justify;
+    width: 55%;
+    margin-top: 1.5em;
+    font-size: 0.9em;
+}
+
+/* text */
+#main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* gallery */
+ #img-div{
+    margin-top: 5em;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+.gallery { width: 100%; }
+.img-wrap { position: relative; }
+.img-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.7s ease;
+    background-color: whitesmoke;
+}
+.img-wrap:hover .img-description { opacity: 0.75; }
+.img-text {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 40%
+}
+
+/* queries */
+@media (max-width: 1000px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+                            "mainc mainc"
+                            "frida frida";
+        gap: 2.5rem 0;
+    }
+    .intro {
+        grid-area: mainc;
+        width: 80%;
+    }
+    .frida-pic {
+        grid-area: frida;
+        margin-bottom: 2rem;
+    }
+    .firstP {width: 100%;}
+}
+@media (max-width: 761px) {
+    .intro > h1 { font-size: 2.5rem; }
+    .frida-pic { width: 85%;}
+    .firstP { font-size: 0.85rem;}
+    p { 
+        width: 90%;
+        font-size: 1rem;
+    }
+    .container {grid-template-columns: repeat(2, 1fr);}
+    .img-text { font-size: 1.3rem;}
+} 
