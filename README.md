@@ -1,2 +1,3 @@
 # freecodecamp
-freecodecamp projects
+Projects I made to earn a freeCodeCamp certification.
+
