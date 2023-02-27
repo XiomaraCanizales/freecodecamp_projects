@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>python documentation</header>
+        <a href="#introduction" class="nav-link">introduction</a>
+        <a href="#installing_python" class="nav-link">installing python</a>
+        <a href="#python_basics" class="nav-link">python basics</a>
+        <a href="#operators" class="nav-link">operators</a>
+        <a href="#strings" class="nav-link">strings</a>
+        <a href="#booleans" class="nav-link">booleans</a>
+        <a href="#lists" class="nav-link">lists</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>introduction</header>
+            <h2>What is Python?</h2>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+            <article>
+                <h3>python is used for</h3> 
+                <ul>
+                    <li>Web development (server-side)</li>
+                    <li>Software development</li>
+                    <li>Mathematics</li>
+                    <li>System scripting</li>
+                </ul>
+            </article>
+            <article>
+                <h3>What can Python do?</h3>
+                <ul>
+                    <li>Python can be used on a server to create web applications</li>
+                    <li>Python can be used alongside software to create workflows</li>
+                    <li>Python can connect to database systems. It can also read and modify files</li>
+                    <li>Python can be used to handle big data and perform complex mathematics</li>
+                    <li>Python can be used for rapid prototyping, or for production-ready software development</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Why Python?</h3>
+                <ul>
+                    <li>Python works on different platforms</li>
+                    <li>Python has a simple syntax similar to the English</li>
+                    <li>Python allows developers to write programs with fewer lines</li>
+                    <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="installing_python">
+            <header>installing python</header>
+            <article>
+                <h3>macOS</h3>
+                <p>The system install of Python on macOS is not supported. Instead, a package management system like <a href="https://brew.sh">Homebrew</a> is recommended. To install Python using Homebrew on macOS use <code>brew install python3</code> at the Terminal prompt.</p>
+            </article>
+            <article>
+                <h3>Windows</h3>
+                <p>Install <a href="python.org.">Python</a>. You can typically use the Download Python button that appears first on the page to download the latest version.</p>
+            </article>
+        </section>
+        <section class="main-section" id="python_basics">
+            <header>python basics</header>
+            <article>
+                <h3>Python Indentation</h3>
+                <p>Python uses indentation to indicate a block of code.</p>
+            </article>
+            <article>
+                <h3>Python Variables</h3>
+                <p>Variables are containers for storing data values.</p>
+                <p>In Python, variables are created when you assign a value to it</p>
+                <code>
+                    x = 5 <br>
+                    y = "Hello, World!"
+                </code>
+            </article>
+            <article>
+                <h3>Comments</h3>
+                <p>Comments start with a #</p>  
+            </article>
+            <article>
+                <h3>Built-in Data Types</h3>
+                <p>Python has the following data types built-in by default, in these categories:</p> 
+                <ul>
+                    <li>Text Type: str</li>
+                    <li>Numeric Types: int, float, complex</li>
+                    <li>Sequence Types: list, tuple, range</li>
+                    <li>Mapping Type: dict</li>
+                    <li>Set Types: set, frozenset</li>
+                    <li>Boolean Type: bool</li>
+                    <li>Binary Types: bytes, bytearray, memoryview</li>
+                    <li>None Type: NoneType</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="operators">
+            <header>operators</header>
+            <p>Operators are used to perform operations on variables and values.</p>
+            <div>
+                <article>
+                    <h3>Python Arithmetic Operators</h3>
+                    <p>Arithmetic operators are used with numeric values to perform common mathematical operations</p>
+                    <ul>
+                        <li>+</li>
+                        <li>-</li>
+                        <li>*</li>
+                        <li>/</li>
+                        <li>%</li>
+                        <li>**</li>
+                        <li>//</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Python Assignment Operators</h3>
+                    <p>Assignment operators are used to assign values to variables</p>
+                    <ul>
+                        <li>=</li>
+                        <li>+=</li>
+                        <li>-+</li>
+                        <li>*=</li>
+                        <li>/=</li>
+                        <li>%=</li>
+                        <li>//=</li>
+                        <li>**=</li>
+                        <li>&=</li>
+                        <li>|=</li>
+                        <li>^=</li>
+                        <li>>>=</li>
+                        <li><<=</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Python Comparison Operators</h3>
+                    <p>Comparison operators are used to compare two values</p>
+                    <ul>
+                        <li>==</li>
+                        <li>!=</li>
+                        <li>></li>
+                        <li><</li>
+                        <li>>=</li>
+                        <li><=</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Python Logical Operators</h3>
+                    <p>Logical operators are used to combine conditional statements</p>
+                    <ul>
+                        <li>and</li>
+                        <li>or</li>
+                        <li>not</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Python Identity Operators</h3>
+                    <p>Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location</p>
+                    <ul>
+                        <li>is</li>
+                        <li>is not</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Python Membership Operators</h3>
+                    <p>Membership operators are used to test if a sequence is presented in an object</p>
+                    <ul>
+                        <li>in</li>
+                        <li>not in</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Python Bitwise Operators</h3>
+                    <p>Bitwise operators are used to compare (binary) numbers</p>
+                    <ul>
+                        <li>&</li>
+                        <li>|</li>
+                        <li>^</li>
+                        <li>~</li>
+                        <li><<</li>
+                        <li>>></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="main-section" id="strings">
+            <header>strings</header>
+            <p>Strings in python are surrounded by either single quotation marks, or double quotation marks.</p>
+            <article>
+                <h3>Creating String </h3>
+                <p>Assigning a string to a variable is done with the variable name followed by an equal sign and the string</p>
+                <code>
+                    const string1 = "A string primitive";<br>
+                    const string2 = 'Also a string primitive';<br>
+                    const string3 = `Yet another string primitive`;
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="booleans">
+            <header>booleans</header>
+            <p>The Boolean object represents a truth value: true or false.</p>
+        </section>
+        <section class="main-section" id="lists">
+            <header>lists</header>
+            <p>Lists are used to store multiple items in a single variable.</p>
+            <article>
+                <h3>List Creation</h3>
+                <p>Lists are created using square brackets</p>
+                <p>List items are ordered, changeable, and allow duplicate values.</p>
+                <p>List items are indexed, the first item has index [0], the second item has index [1] etc.</p>
+                <code>
+                    thislist = ["apple", "banana", "cherry"]<br>
+                    print(thislist)<br>
+                    #outline: ['apple', 'banana', 'cherry']
+                </code>
+            </article>
+            <article>
+                <h3>List Length</h3>
+                <p>To determine how many items a list has, use the len() function</p>
+                <code>
+                    thislist = ["apple", "banana", "cherry"]<br>
+                    print(len(thislist))<br>
+                    #outline: 3
+                </code>
+            </article>
+            <article>
+                <h3>Access Items</h3>
+                <p>List items are indexed and you can access them by referring to the index number</p>
+                <code>
+                    # Print the second item of the list:<br>
+                    thislist = ["apple", "banana", "cherry"]<br>
+                    print(thislist[1])<br>
+                    #outline: banana
+                </code>
+            </article>
+            <article>
+                <h3>Change Item Value</h3>
+                <p>To change the value of a specific item, refer to the index number</p>
+                <code>
+                    #Change the second item:<br>
+                    thislist = ["apple", "banana", "cherry"]<br>
+                    thislist[1] = "blackcurrant"<br>
+                    print(thislist)<br>
+                    #outline: ['apple', 'blackcurrant', 'cherry']
+                </code>
+            </article>
+        </section>
+       
+    </main>
+</body>
+</html>
