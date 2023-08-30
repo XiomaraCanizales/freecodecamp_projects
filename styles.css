@@ -2,10 +2,10 @@
 /* variables */
 :root {
     /* colors*/
-    --onyx:  #393E41;
     --silverpink: #C7ACA1;
     --champagnepink: #EEDDD1;
-    --platinum: #E7E4E0;
+    --black:  #393D3F;
+    --white: #FDFDFF;
     /* fonts */
     --ff-primary: 'Montserrat', sans-serif;
     --ff-light: 200;
@@ -34,21 +34,21 @@ img {
 }
 
 a { 
-    color: var(--onyx);
+    color: var(--black);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: var(--spacing);
 }
   
 a:hover {
-    color: var(--onyx);
+    color: var(--black);
     text-decoration: none;
 }
 
 h1 { 
     letter-spacing: var(--spacing);
     text-transform: uppercase;
-    color: var(--onyx);
+    color: var(--black);
     font-weight: var(--ff-bold);
     font-size: var(--size-bg);
     margin-top: 2rem;
@@ -60,7 +60,7 @@ p {
 }
 
 body {
-    background-color: var(--platinum); 
+    background-color: var(--white); 
     font-size: 16px;
     padding: 0 5em;
 }
@@ -92,8 +92,8 @@ main { margin: 3rem 0; }
 }
 
 .box p {
-    background-color: var(--onyx);
-    color: var(--platinum);
+    background-color: var(--black);
+    color: var(--white);
     padding: 0.5em 0;
     width: 100%;
     text-align: center;
