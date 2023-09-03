@@ -23,7 +23,7 @@
 /* basic styles */
 body {
     background-color: var(--white); 
-    padding: 2rem;
+    padding: 2rem 2.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -52,7 +52,7 @@ h1 {
     margin: 2rem 0;
 }
 
-p { font-size: 1.2rem; }
+p { font-size: 1rem; }
 
 /* HEADER */
 
