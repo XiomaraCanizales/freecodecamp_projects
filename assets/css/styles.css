@@ -73,6 +73,7 @@ img {
 header { padding: 1.5rem 0; }
 
 /* MAIN SECTION */
+main { margin-bottom: 3rem; }
 
 .box-container {
     display: flex;
